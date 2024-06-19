@@ -249,17 +249,3 @@ class VolDataset(Dataset):
 
     def __getitem__(self,idx):
         return self.data[idx].float().unsqueeze(0)
-
-class condVolDataset(Dataset):
-    def __init__(self,file_path):
-        with open(file_path,"rb") as file:
-            self.data=torch.load(file).type(torch.float32)
-            if self.data.shape[1:4]!=(1,16,32):
-                raise ValueError(f"Data shape {self.data.shape} is not valid. It should be (n,1,16,32)")
-            self.data=self.data[:20]
-
-    def __len__(self):
-        return self.data.shape[0]
-
-    def __getitem__(self,idx):
-        return self.data[idx].float().unsqueeze(0)
