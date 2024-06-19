@@ -93,11 +93,10 @@ class VolaDiff():
 
     Technical specs: zero terminal SNR variance-preserving noise schedule, UNet x-prediction denoising, fully stochastic DDIM sampler.
 
-    Train the model on a dataset of n 16x32 volatility surfaces, normalised to approximately [-1,1] and flattened into
-    an nx512 array saved as a pt file. A good final NMSE is 0.04. Load the model from "best_model_checkpoint.pt" to
-    sample from the model. Condition the model by providing a data loader of target surfaces to the sampling function.
-    Unconditional generation is also possible by supplying 'None' to the data loader. See voladiff_demo.ipynb for a
-    demonstration of the model.
+    Train the model on a dataset of n 16x32 volatility surfaces, normalised to approximately [-1,1], reshaped to (n,1,16,32) and saved
+    as a pt file. A good final NMSE is 0.04. Load the model from "best_model_checkpoint.pt" to sample from the model. Condition the
+    model by providing a data loader of target surfaces to the sampling function. Unconditional generation is also possible by supplying
+    'None' to the data loader.
     
     """
     
