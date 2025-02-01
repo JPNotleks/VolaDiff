@@ -14,4 +14,4 @@ Since the introduction of **0DTE SPX** options, modelling the SPX volatility sur
 
 Various technical details regarding the diffusion architecture and a precise definition of volatility shocks can be found in the [VolaDiff Thesis PDF](assets/voladiff-guide.pdf). Installation and usage are straightforward; see the [**main.ipynb**](https://github.com/JPNotleks/VolaDiff/blob/main/main.ipynb) file for a precise demo of how to train and sample from the diffusion model.
 
-Data was generously sponsored by Option Research and Technology Services (ORATS).
+Data was generously sponsored by Option Research and Technology Services ([ORATS](https://orats.com/)).
