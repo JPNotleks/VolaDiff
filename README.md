@@ -4,4 +4,4 @@
 ![Poetry](https://img.shields.io/badge/poetry-1.5-blue?logo=poetry)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**Generative Implied Volatility Modelling in the Era of 0DTE**
+### Generative Implied Volatility Modelling in the Era of 0DTE
